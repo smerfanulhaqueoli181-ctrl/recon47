@@ -1,0 +1,70 @@
+======================================================================
+  RECONX — SECURITY ASSESSMENT REPORT
+======================================================================
+  Target         : https://example.com
+  Scan Started   : 2026-05-16T14:36:12.861559
+  Scan Ended     : 2026-05-16T14:36:18.801012
+  Duration       : 5.9 seconds
+  Report Generated: 2026-05-16 14:36:18
+======================================================================
+
+[1] RECONNAISSANCE FINDINGS
+----------------------------------------------------------------------
+
+  Domain         : example.com
+  IP (A Record)  : 104.20.23.154
+  All IPs        : 104.20.23.154, 172.66.147.243, 2606:4700:10::ac42:93f3, 2606:4700:10::6814:179a
+
+  SSL/TLS Version: TLSv1.3
+  Cipher         : ('TLS_AES_256_GCM_SHA384', 'TLSv1.3', 256)
+  Cert Issuer    : Anthropic
+  Valid Until    : Jun  6 06:17:48 2026 GMT
+  SAN Entries    : example.com
+
+  HTTP Status    : 403
+  Server         : 
+  X-Powered-By   : 
+  Missing Headers: X-Frame-Options, X-XSS-Protection, Strict-Transport-Security, Content-Security-Policy, X-Content-Type-Options
+
+  Open Ports     : 80, 443
+
+  Subdomains (1):
+    - www.example.com
+
+  Technologies (0):
+
+  JavaScript Files (0):
+
+
+[2] CRAWL & ENDPOINT DISCOVERY
+----------------------------------------------------------------------
+
+  Total URLs Found : 1
+    https://example.com
+
+  Parameters Discovered (0): 
+
+  Forms (0):
+
+  Interesting Paths (0):
+
+
+[3] VULNERABILITY FINDINGS
+----------------------------------------------------------------------
+
+  No vulnerabilities found.
+
+
+[4] SUMMARY
+----------------------------------------------------------------------
+
+  Target         : https://example.com
+  Subdomains     : 1
+  Open Ports     : 2
+  Technologies   : 0
+  URLs Crawled   : 1
+  Vulnerabilities: 0
+
+======================================================================
+  END OF REPORT — ReconX v1.0.0
+======================================================================

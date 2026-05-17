@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ReconX Report — https://example.com</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #e0e0e0; }
+  header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-bottom: 2px solid #e74c3c; padding: 24px 40px; }
+  header h1 { color: #e74c3c; font-size: 28px; letter-spacing: 4px; }
+  header p  { color: #888; margin-top: 4px; font-size: 13px; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 30px 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap: 16px; margin-bottom: 30px; }
+  .card { background: #1e2130; border-radius: 8px; padding: 20px; border-left: 4px solid #e74c3c; }
+  .card .num { font-size: 32px; font-weight: 700; color: #e74c3c; }
+  .card .lbl { font-size: 12px; color: #888; margin-top: 4px; text-transform: uppercase; letter-spacing: 1px; }
+  .sev-grid { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 30px; }
+  .sev-badge { padding: 8px 16px; border-radius: 6px; font-size: 13px; font-weight: 600; }
+  section { margin-bottom: 32px; }
+  section h2 { font-size: 16px; color: #e74c3c; border-bottom: 1px solid #2a2d3e;
+                padding-bottom: 8px; margin-bottom: 16px; text-transform: uppercase;
+                letter-spacing: 2px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { background: #1e2130; color: #888; padding: 10px 12px; text-align: left;
+        font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+  td { padding: 9px 12px; border-bottom: 1px solid #1e2130; vertical-align: top; }
+  tr:hover td { background: #1a1d2b; }
+  .tag { display:inline-block; background:#2a2d3e; border-radius:4px;
+          padding:2px 8px; font-size:11px; margin:2px; color:#aaa; }
+  pre { background:#1e2130; padding:14px; border-radius:6px; font-size:12px;
+         overflow-x:auto; max-height:240px; color:#a0c4ff; }
+  ul li { margin: 4px 0; font-size: 13px; color: #ccc; }
+  footer { text-align: center; color: #444; font-size: 12px; padding: 20px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>⬡ RECONX SECURITY REPORT</h1>
+  <p>Target: https://example.com &nbsp;|&nbsp; 2026-05-16T14:36:12.861559 &nbsp;|&nbsp; Duration: 5.9s</p>
+</header>
+
+<div class="container">
+
+  <!-- Summary cards -->
+  <div class="grid">
+    <div class="card"><div class="num">1</div><div class="lbl">Subdomains</div></div>
+    <div class="card"><div class="num">2</div><div class="lbl">Open Ports</div></div>
+    <div class="card"><div class="num">0</div><div class="lbl">Technologies</div></div>
+    <div class="card"><div class="num">1</div><div class="lbl">URLs Found</div></div>
+    <div class="card"><div class="num" style="color:#27ae60">0</div><div class="lbl">Vulnerabilities</div></div>
+  </div>
+
+  <!-- Severity breakdown -->
+  <div class="sev-grid">
+    
+  </div>
+
+  <!-- Vulnerabilities -->
+  <section>
+    <h2>Vulnerability Findings</h2>
+    <table>
+      <thead><tr><th>Severity</th><th>Title</th><th>URL</th><th>Evidence</th><th>Remediation</th></tr></thead>
+      <tbody><tr><td colspan="5" style="text-align:center;color:#999">No vulnerabilities found</td></tr></tbody>
+    </table>
+  </section>
+
+  <!-- Recon -->
+  <section>
+    <h2>Reconnaissance</h2>
+    <table>
+      <tbody>
+        <tr><td><strong>Domain</strong></td><td>example.com</td></tr>
+        <tr><td><strong>IP Address</strong></td><td>104.20.23.154</td></tr>
+        <tr><td><strong>Open Ports</strong></td><td>80, 443</td></tr>
+        <tr><td><strong>SSL Version</strong></td><td>TLSv1.3</td></tr>
+        <tr><td><strong>Cert Valid Until</strong></td><td>Jun  6 06:17:48 2026 GMT</td></tr>
+        <tr><td><strong>Server</strong></td><td></td></tr>
+        <tr><td><strong>Subdomains</strong></td><td>www.example.com</td></tr>
+        <tr><td><strong>Technologies</strong></td><td>—</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Endpoints -->
+  <section>
+    <h2>Discovered Endpoints (1)</h2>
+    <pre>https://example.com</pre>
+    
+  </section>
+
+  <!-- Parameters -->
+  <section>
+    <h2>Parameters (0)</h2>
+    <p>None found</p>
+  </section>
+
+  <!-- Interesting Paths -->
+  <section>
+    <h2>Interesting Paths (0)</h2>
+    <table>
+      <thead><tr><th>Status</th><th>URL</th></tr></thead>
+      <tbody>
+        <tr><td colspan="2" style="color:#888">None found</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+</div>
+<footer>ReconX v1.0.0 &mdash; For authorized use only</footer>
+</body>
+</html>

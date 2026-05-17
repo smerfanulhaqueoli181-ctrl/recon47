@@ -1,0 +1,103 @@
+{
+  "target": "https://example.com",
+  "scan_start": "2026-05-16T14:36:12.861559",
+  "args": {
+    "target": "https://example.com",
+    "depth": 2,
+    "threads": 5,
+    "timeout": 10,
+    "delay": 0.5,
+    "output": "sample_report",
+    "html": true,
+    "no_vuln": true,
+    "no_crawl": false,
+    "nikto": false,
+    "nuclei": false,
+    "stealth": false,
+    "verbose": false
+  },
+  "recon": {
+    "domain": "example.com",
+    "dns": {
+      "a_record": "104.20.23.154",
+      "all_ips": [
+        "104.20.23.154",
+        "172.66.147.243",
+        "2606:4700:10::ac42:93f3",
+        "2606:4700:10::6814:179a"
+      ]
+    },
+    "http_headers": {
+      "status_code": 403,
+      "server": "",
+      "x_powered_by": "",
+      "content_type": "",
+      "x_frame_options": "",
+      "x_xss_protection": "",
+      "strict_transport_security": "",
+      "content_security_policy": "",
+      "x_content_type_options": "",
+      "referrer_policy": "",
+      "set_cookie": "",
+      "all": {
+        "x-deny-reason": "host_not_allowed",
+        "content-length": "21",
+        "content-type": "text/plain",
+        "date": "Sat, 16 May 2026 14:36:12 GMT",
+        "connection": "close"
+      },
+      "missing_security_headers": [
+        "X-Frame-Options",
+        "X-XSS-Protection",
+        "Strict-Transport-Security",
+        "Content-Security-Policy",
+        "X-Content-Type-Options"
+      ]
+    },
+    "ssl": {
+      "version": "TLSv1.3",
+      "cipher": [
+        "TLS_AES_256_GCM_SHA384",
+        "TLSv1.3",
+        256
+      ],
+      "subject": {
+        "commonName": "example.com"
+      },
+      "issuer": {
+        "organizationName": "Anthropic",
+        "commonName": "sandbox-egress-production TLS Inspection CA"
+      },
+      "not_before": "May  7 06:17:49 2026 GMT",
+      "not_after": "Jun  6 06:17:48 2026 GMT",
+      "san": [
+        "example.com"
+      ]
+    },
+    "open_ports": [
+      80,
+      443
+    ],
+    "subdomains": [
+      "www.example.com"
+    ],
+    "technologies": [],
+    "js_files": [],
+    "robots_sitemap": {
+      "/robots.txt": null,
+      "/sitemap.xml": null
+    }
+  },
+  "crawl": {
+    "urls": [
+      "https://example.com"
+    ],
+    "parameters": [],
+    "forms": [],
+    "interesting_paths": [],
+    "total_visited": 1
+  },
+  "vulnerabilities": [],
+  "scan_end": "2026-05-16T14:36:18.801012",
+  "duration_seconds": 5.939453
+}
